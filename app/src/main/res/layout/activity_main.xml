@@ -11,13 +11,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginRight="50dp"
-            android:text="Start" />
+            android:layout_marginTop="50dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="100dp"
+            android:text="START SERVICE"
+            android:onClick="startserv"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP SERVICE"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="50dp"
+            android:onClick="stopserv"/>
+
+        <Button
+            android:id="@+id/get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET COUNT"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="50dp"
+            android:onClick="getcount"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
